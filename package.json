@@ -1,45 +1,20 @@
 {
-  "private": true,
-  "name": "my-app",
+  "name": "colyseus-esm",
   "version": "1.0.0",
-  "type": "module",
-  "description": "npm init template for bootstrapping an empty Colyseus project",
-  "main": "build/index.js",
-  "engines": {
-    "node": ">= 16.13.0"
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "turbo": "^1.13.0"
   },
   "scripts": {
-    "start": "node dist/index.js",
-    "dev": "tsx watch src/index.ts",
-    "loadtest": "tsx loadtest/example.ts --room my_room --numClients 2",
-    "build": "npm run clean && tspc",
-    "clean": "rimraf dist",
-    "test": "mocha -r tsx test/**_test.ts --exit --timeout 15000"
+    "dev": "turbo dev",
+    "start": "turbo start",
+    "build": "turbo build"
   },
+  "keywords": [],
   "author": "",
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/colyseus/create-colyseus/issues"
-  },
-  "homepage": "https://github.com/colyseus/create-colyseus#readme",
-  "devDependencies": {
-    "@colyseus/loadtest": "^0.15.2",
-    "@colyseus/testing": "^0.15.2",
-    "@types/express": "^4.17.21",
-    "@types/mocha": "^10.0.6",
-    "mocha": "^10.3.0",
-    "rimraf": "^5.0.5",
-    "ts-patch": "^3.1.2",
-    "tsconfig-paths": "^4.2.0",
-    "tsx": "^3.14.0",
-    "typescript": "^5.4.3",
-    "typescript-transform-paths": "^3.4.7"
-  },
-  "dependencies": {
-    "@colyseus/monitor": "^0.15.6",
-    "@colyseus/playground": "^0.15.12",
-    "@colyseus/tools": "^0.15.36",
-    "colyseus": "^0.15.15",
-    "express": "^4.19.1"
+  "license": "ISC",
+  "volta": {
+    "node": "20.11.1"
   }
 }
