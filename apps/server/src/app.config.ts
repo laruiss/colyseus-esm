@@ -3,10 +3,17 @@ import config from '@colyseus/tools'
 import { monitor } from '@colyseus/monitor'
 import { playground } from '@colyseus/playground'
 
+import { add } from '@colyseus-esm/shared'
+import type { Foo } from '@colyseus-esm/shared'
+
 /**
  * Import your Room files
  */
 import { MyRoom } from '@/rooms/MyRoom.js'
+
+const foo: Foo = {
+  bar: add(40, 2),
+}
 
 export default config.default({
 
@@ -23,7 +30,7 @@ export default config.default({
      * Read more: https://expressjs.com/en/starter/basic-routing.html
      */
     app.get('/hello_world', (req, res) => {
-      res.send('It\'s time to kick ass and chew bubblegum!')
+      res.send(`It's time to kick ass and chew bubblegum!${JSON.stringify(foo)}`)
     })
 
     /**
