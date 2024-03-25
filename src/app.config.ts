@@ -7,7 +7,8 @@ import { playground } from "@colyseus/playground";
  */
 import { MyRoom } from "@/rooms/MyRoom.js";
 
-export default config({
+
+export default config.default({
 
     initializeGameServer: (gameServer) => {
         /**

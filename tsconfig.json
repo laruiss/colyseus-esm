@@ -15,8 +15,13 @@
     "baseUrl": ".",
     "rootDir": "src",
     "paths": {
-      "@/*": ["./*"],
-    }
+      "@/*": ["./src/*"],
+    },
+    "plugins": [
+      {
+        "transform": "typescript-transform-paths"
+      }
+    ]
   },
   "include": [
     "src"
