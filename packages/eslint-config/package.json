@@ -1,0 +1,19 @@
+{
+  "name": "@colyseus-esm/eslint-config",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "eslint.config.js",
+  "scripts": {
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.9.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6"
+  }
+}

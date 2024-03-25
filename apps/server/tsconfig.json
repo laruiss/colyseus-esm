@@ -1,23 +1,23 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
     "target": "ESNext",
+    "useDefineForClassFields": false,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "rootDir": "src",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "strict": true,
-    "allowJs": true,
-    "strictNullChecks": false,
-    "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "useDefineForClassFields": false,
-    "baseUrl": ".",
-    "preserveSymlinks": true,
-    "rootDir": "src",
     "paths": {
-      "@/*": ["./src/*"],
+      "@/*": ["./src/*"]
     },
+    "allowJs": true,
+    "strict": true,
+    "strictNullChecks": false,
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "preserveSymlinks": true,
+    "skipLibCheck": true,
     "plugins": [
       {
         "transform": "typescript-transform-paths"
